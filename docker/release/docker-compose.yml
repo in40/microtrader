@@ -81,4 +81,6 @@ services:
       JUNIT_REPORT_STACK: 1
     command:
       - "--reporter"
-      - "mocha-jenkins-reporter"
+      - "xunit"
+      - "--reporter-options"
+      - "output=/reports/acceptance.xml"
